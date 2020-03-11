@@ -10,7 +10,7 @@ end
 end
 
 namespace :run do
-  desc "running"
+  desc "rodando.."
   task :rspec do
     sh 'rspec spec/crud_spec.rb'
   end
@@ -23,10 +23,10 @@ namespace :run do
 end
 
 namespace :gem do
-  desc "all about gem"
+  desc "tudo sobre gem"
   task :install do
     sh 'bundle install'
-	puts "install gem success"
+	puts "Sucesso!"
 	end
 end
 
