@@ -14,28 +14,34 @@ Simples e para uso de Estudo!
 
 <h3> Install 💻</h3>
 
-Setup
-set configuration, db ,etc
+## Requires
+1. Ruby
+2. Postgresql (you can change if not like. only support SQL databases)
 
-config/config.rb
+## Setup
+set configuration, db ,etc 
+> ```config/config.rb```
 
 install gems
-
-rake gem:install
+> ```rake gem:install```
 
 create table db
+> ```rake db:migrate```
 
-rake db:migrate
-
-Test
+## Test
 rspec
+> ```rake run:rspec```
 
-rake run:rspec
+## Run
+Terminal :
+```rake run:term```
 
-Run
-Terminal : rake run:term
+Web :
+```rake run:web```
 
-Web : rake run:web
+## ss
+- terminal
+> ![](https://i.imgur.com/yQWV7C7.gif)
 
 
 By Eric Montelares ❤️
