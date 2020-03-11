@@ -17,7 +17,7 @@ class Web < WEBrick::HTTPServlet::AbstractServlet
 		table = Terminal::Table.new :headings => ['id', 'Chara', 'Rate', 'Description'], :rows => rows
 
     content = eruby.result( 
-    	:title => "Ruby CRUD", 
+    	:title => "Mini Server", 
         :t_all => all, 
     	:t_chara => chara, 
     	:t_rate => rate, 
