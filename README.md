@@ -16,16 +16,16 @@ Simples e para uso de Estudo!
 
 ## Requires
 1. Ruby
-2. Postgresql (you can change if not like. only support SQL databases)
+2. Postgresql (qualquer SQL DB)
 
 ## Setup
-set configuration, db ,etc 
+setar config de db etc...
 > ```config/config.rb```
 
-install gems
+Instalar Gems
 > ```rake gem:install```
 
-create table db
+Criar Tabela db
 > ```rake db:migrate```
 
 ## Test
@@ -39,9 +39,6 @@ Terminal :
 Web :
 ```rake run:web```
 
-## ss
-- terminal
-> ![](https://i.imgur.com/yQWV7C7.gif)
 
 
 By Eric Montelares ❤️
