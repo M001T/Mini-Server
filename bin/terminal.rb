@@ -60,9 +60,9 @@ end
 
 			#ready
 			puts "======================================="
-			puts "== Welcome Ruby CRUD with postgresql Database "
+			puts "== Bem-vindo ao Mini Server"
 			puts "== MainMenu :<help>,<pg>,<ar>,<create>,<read>,<update>,<delete>,<exit>"
-			puts "== #{configatron.site} (follow guys :>)"
+			puts "== De uma estrela no Github <3"
 			menu = Mainmenu.new
 			menu.whdzera
 
