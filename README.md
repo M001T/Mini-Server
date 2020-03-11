@@ -3,7 +3,7 @@
 #  🎒 Mini-Server
 Um Simples CRUD/Server feito com Ruby
 
-<h3> About 📃</h3>
+<h3> Sobre 📃</h3>
 
 Simples e para uso de Estudo!
 
@@ -14,25 +14,25 @@ Simples e para uso de Estudo!
 
 <h3> Install 💻</h3>
 
-## Requires
+## Precisa de:
 1. Ruby
 2. Postgresql (qualquer SQL DB)
 
-## Setup
+## Setup 🔧
 setar config de db etc...
 > ```config/config.rb```
 
-Instalar Gems
+Instalar Gems 💎
 > ```rake gem:install```
 
-Criar Tabela db
+Criar Tabela db 📊
 > ```rake db:migrate```
 
-## Test
+## Test 🔨
 rspec
 > ```rake run:rspec```
 
-## Run
+## Run 💻
 Terminal :
 ```rake run:term```
 
