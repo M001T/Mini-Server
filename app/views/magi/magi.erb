@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" col>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+        </div>
+      </div>
+    </div>
+	
+	
+
+  <div class="container" col>
+    <div class="navbar navbar-inverse navbar-static-top">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Create</a></li>
+            </ul>
+      </div>
+    </div>
+
+		<form>
+		  Chara:<br>
+		  <input type="text" name="chara" value="">
+		  <br>
+		  Rate:<br>
+		  <input type="text" name="rate" value="">
+		  <br>
+		  Desc:<br>
+		  <input type="text" name="description" value="">
+		  <br><br>
+		  <input type="submit" value="Submit" onclick="cre()">
+			<% #magi_cr = Magi.new(:chara => chara, :rate => rate, :description => description) %>
+	  		<% #magi_cr.save %>
+		  </input>
+		</form> 
+		
+		<br>
+  <div class="container" col>
+    <div class="navbar navbar-inverse navbar-static-top">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Read</a></li>
+            </ul>
+      </div>
+    </div>
+	<ul>
+		<% t_all.each do |results| %>
+		<li>
+		<%= results %> 
+		</li>
+		<% end %>
+	</ul>
+	
+	
+	
+		<br>
+  <div class="container" col>
+    <div class="navbar navbar-inverse navbar-static-top">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Update</a></li>
+            </ul>
+      </div>
+    </div>
+		<form>
+		  Id(yg ingin diupdate):<br>
+		  <input type="text" name="id" value="">
+		  <br>
+		  Chara:<br>
+		  <input type="text" name="chara" value="">
+		  <br>
+		  Rate:<br>
+		  <input type="text" name="rate" value="">
+		  <br>
+		  Desc:<br>
+		  <input type="text" name="description" value="">
+		  <br><br>
+		  <input type="submit" value="Submit" onclick="up()">
+	  		<% #magi_up = Magi.find(:id => id) %>
+			<% #magi_up.new(:chara => chara, :rate => rate, :description => description) %>
+	  		<% #magi_up.save %>
+		  </input>
+		</form> 
+		
+		<br>
+  <div class="container" col>
+    <div class="navbar navbar-inverse navbar-static-top">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Delete</a></li>
+            </ul>
+      </div>
+    </div>
+		<form>
+		  id(yg ingin didelete):<br>
+		  <input type="text" name="id" value="">
+		  <br><br>
+		  <input type="submit" value="Submit" onclick="del()">
+			<% #magi_del = Magi.find(:id => id) %>
+	  		<% #magi_del.destroy %>
+		  </input>
+		</form> 
+	
+
+	</div
+	<div>
+
+	<script>
+	function cre() {
+	  alert("success created!");
+	}
+	</script>
+	
+	<script>
+	function up() {
+	  alert("success updated!");
+	}
+	</script>
+	
+	<script>
+	function del() {
+	  alert("success deleted!");
+	}
+	</script>
+	</div>
+
+    </div>
+
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

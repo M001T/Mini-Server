@@ -1,0 +1,31 @@
+require 'pg'
+require 'active_record'
+require 'configatron'
+require 'logger'
+require "webrick"
+require "erubis"
+	
+	#configuration
+	configatron.site = 'https://twitter.com/rokhiminwahid' #follow 
+	configatron.home = "/" 
+	configatron.port = 9000 
+	configatron.adapter = 'postgresql'
+	configatron.host = '' 
+	configatron.db = ''
+	configatron.user = ''
+	configatron.pass = ''
+	configatron.encoding = 'unicode'
+	configatron.pool = 5000
+
+
+    #connection to postgresql
+    configatron.connection = PG.connect :dbname => configatron.db, :host => configatron.host, :user => configatron.user, 
+        :password => configatron.pass
+
+
+    #connection to activerecord
+    ActiveRecord::Base.establish_connection :adapter => configatron.adapter, :database => configatron.db,  :host => configatron.host, :user => configatron.user, 
+        :password => configatron.pass, :encoding => configatron.encoding, :pool => configatron.pool
+
+
+  
