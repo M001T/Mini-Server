@@ -5,9 +5,9 @@ class Delete
 	def rspec
 		#create metod to rspec
 		init = Magi.new(	:id => 66,
-							:chara  => 'Jafar_del',
+							:chara  => 'Teste',
 		            		:rate => 7,
-		                    :description  => 'anjing, test deleted')
+		                    :description  => 'teste deletado')
 		init.save
 		
 		#del method to rspec
@@ -18,22 +18,22 @@ class Delete
 	
 	def term_delete
 		puts "== MENU DELETED"
-		puts "== masukan id yang ingin didelete"
+		puts "== insira o ID que você deseja excluir"
 		y_input = gets.chomp.to_i
 		init = Magi.find(y_input)
 		puts init.inspect
 
-		puts "== anda yakin ingin menghapusnya?(y)(n)..."
+		puts "== Tem certeza de que deseja excluí-lo? (Y) (n) ..."
 		xxx = gets.chomp
 		case xxx
 			when "y"
 				init.destroy
-			puts "== berhasil dihapus"
+			puts "== Deletado Com Sucesso"
 				
 			when "n"
-				puts "== anda membatalkan deleted."
+				puts "== Cancelando o (Delete)"
 			else
-				puts "== anda membatalkan deleted"
+				puts "== Cancelando o (Delete)"
 		end
 	end
 end
