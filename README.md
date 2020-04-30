@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-#  🎒 Mini-Server
+#  :pencil2: Mini-Server
 Um Simples CRUD/Server feito com Ruby
 
 <h3> Sobre 📃</h3>
